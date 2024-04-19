@@ -5,7 +5,7 @@ const btnEx1 = document.getElementById('btn-ex1')
 const btnEx2 = document.getElementById('btn-ex2')
 const btnEx3 = document.getElementById('btn-ex3')
 const btnEx4 = document.getElementById('btn-ex4')
-
+const btnEx5 = document.getElementById('btn-ex5')
 
 btnEx1.addEventListener('click',() => {
     title.style.backgroundColor = "blue"
@@ -28,5 +28,11 @@ btnEx4.addEventListener('click', ()=>{
     const h1 = document.querySelector('div:nth-child(4) h1')
 
     div4.removeChild(h1)
+})
+
+btnEx5.addEventListener('click', ()=>{
+    for(let i = 0; i<elements.length;i++){
+        elements[i].style.backgroundColor = 'green'
+    }   
 })
 
